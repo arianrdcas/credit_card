@@ -1,5 +1,11 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative; /* Asegura que los elementos dentro tengan una referencia de posición */
 }
 
 img.bg-card {
@@ -10,34 +16,44 @@ img.bg-card {
 
 .bg-card.back {
   position: absolute;
-  top: 22%; /* Centra verticalmente la tarjeta */
-  left: 52%; /* Centra horizontalmente la tarjeta */
+  top: 70%; /* Ajusta la posición verticalmente al centro del contenedor */
+  left: 50%; /* Ajusta la posición horizontalmente al centro del contenedor */
   transform: translate(-50%, -50%);
 }
 
 .bg-card.front {
   position: absolute;
-  top: 33%;
+  top: 100%;
   left: 40%;
   transform: translate(-50%, -50%);
 }
 
 p {
   position: absolute;
-  top: 22%;
-  left: 72%;
+  top: 70%; /* Ajusta la posición verticalmente */
+  left: 72%; /* Ajusta la posición horizontalmente */
   transform: translate(-50%, -50%);
   font-size: 10px;
   color: lightgray;
 }
 
-.ciculo {
+.circulo {
   position: absolute;
-  top: 26.5%;
-  left: 14%;
-  transform: translate(-50%, -50%);
+  top: 78%; /* Ajusta la posición verticalmente */
+  left: 10%; /* Ajusta la posición horizontalmente */
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: white;
+}
+
+.circulo.dos {
+  position: absolute;
+  top: 80%;
+  left: 18%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid white;
 }
