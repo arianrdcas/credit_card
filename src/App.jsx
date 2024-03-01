@@ -10,10 +10,17 @@ function App() {
       <div className="container">
         <img src={bgmobile} alt="Background" />
         <img className="bg-card back" src={bgcardback} alt="Card Back" />
-        <img className="bg-card front" src={bgcardfront} alt="Card Front" />
         <p>000</p>
+      </div>
+      <div className="frontal">
+        <img className="card front" src={bgcardfront} alt="Card Front" />
         <div className="circulo"></div>
         <div className="circulo dos"></div>
+        <p className="credit_card_number">1234567891234567</p>
+     
+          <span className="nombre">Pepe Perez</span>
+          <span className="fecha_expiracion">05/30</span>
+        
       </div>
     </>
   );
