@@ -8,6 +8,9 @@
   position: relative; /* Asegura que los elementos dentro tengan una referencia de posición */
 }
 
+.bgmobile {
+}
+
 .bg-card {
   width: 245px;
   height: 125px;
@@ -16,8 +19,8 @@
 
 .bg-card.back {
   position: absolute;
-  top: 70%; /* Ajusta la posición verticalmente al centro del contenedor */
-  left: 50%; /* Ajusta la posición horizontalmente al centro del contenedor */
+  top: 40%; /* Ajusta la posición verticalmente al centro del contenedor */
+  left: 58%; /* Ajusta la posición horizontalmente al centro del contenedor */
   transform: translate(-50%, -50%);
 }
 .frontal {
@@ -44,8 +47,8 @@
 
 p {
   position: absolute;
-  top: 70%; /* Ajusta la posición verticalmente */
-  left: 72%; /* Ajusta la posición horizontalmente */
+  top: 41%; /* Ajusta la posición verticalmente */
+  left: 79%; /* Ajusta la posición horizontalmente */
   transform: translate(-50%, -50%);
   font-size: 10px;
   color: lightgray;
@@ -102,22 +105,48 @@ p {
 
 .nombre {
   position: absolute;
-    font-size: 15px;
-    color: lightgray;
-    grid-row: 3 / 3;
-    grid-column: 1 / 3;
-    align-self: center;
-    justify-self: start;
-    margin-left: 12px;
+  font-size: 15px;
+  color: lightgray;
+  grid-row: 3 / 3;
+  grid-column: 1 / 3;
+  align-self: center;
+  justify-self: start;
+  margin-left: 12px;
 }
 
-.fecha_expiracion{
-   position: absolute;
-    font-size: 15px;
-    color: lightgray;
-    grid-row: 3 / 3;
-    grid-column: 4;
-    align-self: center;
-    justify-self: start;
-    margin-left: 12px; 
+.fecha_expiracion {
+  position: absolute;
+  font-size: 15px;
+  color: lightgray;
+  grid-row: 3 / 3;
+  grid-column: 4;
+  align-self: center;
+  justify-self: start;
+  margin-left: 12px;
+}
+
+/* .form-container{
+  border: 1px solid black;
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.form-container {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: auto; /* Ajusta esto según tus necesidades */
+  grid-template-rows: repeat(4, 1fr);
 }

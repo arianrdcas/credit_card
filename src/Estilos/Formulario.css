@@ -1,0 +1,9 @@
+.item-form:nth-child(n+3) {
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre los elementos 3 y 4 */
+}
+
+input{
+    width: 250px;
+    
+}
