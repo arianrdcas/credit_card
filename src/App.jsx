@@ -21,9 +21,7 @@ function App() {
         <span className="nombre">Pepe Perez</span>
         <span className="fecha_expiracion">05/30</span>
       </div>
-      <div className="form-container">
         <Formulario />
-      </div>
     </>
   );
 }

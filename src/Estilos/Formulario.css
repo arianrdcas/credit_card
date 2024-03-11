@@ -1,9 +1,76 @@
-.item-form:nth-child(n+3) {
-  display: inline-block;
-  margin-right: 10px; /* Espacio entre los elementos 3 y 4 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
-input{
-    width: 250px;
-    
+.formulario {
+  max-width: 600px;
+ 
+  padding: 20px;
+}
+
+
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-grupo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-grupo label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-grupo input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70px;
+}
+.input-grupo .expirate-date {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-grupo-ccv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+button[type="submit"] {
+  background-color: rgb(95, 1, 95);
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: x-large;
+}
+.input-exp-date {
+  display: flex;
+  flex-direction: row;
+  margin-right: 105px;
+  gap: 15px;
 }
