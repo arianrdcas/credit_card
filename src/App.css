@@ -5,10 +5,16 @@
 }
 
 .container {
-  position: relative; /* Asegura que los elementos dentro tengan una referencia de posición */
+  position: relative;
+  width: 350px;
+  height: 150px;
+  top: -180px;
+  left: 20px;
 }
 
 .bgmobile {
+  width: 100%;
+  height: 200px;
 }
 
 .bg-card {
@@ -27,7 +33,7 @@
   width: 245px;
   height: 125px;
   position: relative;
-  top: 100%;
+  top: 87%;
   left: 40%;
   transform: translate(-50%, -50%);
   display: grid;
@@ -124,4 +130,3 @@ p {
   justify-self: start;
   margin-left: 12px;
 }
-

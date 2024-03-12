@@ -4,11 +4,11 @@ import "../Estilos/Formulario.css"
 
 const Formulario = () => {
   return (
-    <>
-      <div class="formulario">
+    
+      <div className="formulario">
         <form action="#" method="post">
           <div className="input-group">
-            <label for="cardholder-name">CARDHOLDER NAME</label>
+            <label htmlFor="cardholder-name">CARDHOLDER NAME</label>
             <input
               placeholder="e.g. Jane Appleseed"
               type="text"
@@ -18,7 +18,7 @@ const Formulario = () => {
             />
           </div>
           <div className="input-group">
-            <label for="card-number">CARD NUMBER</label>
+            <label htmlFor="card-number">CARD NUMBER</label>
             <input
               placeholder="e.g. 1234 5678 9101 1213"
               type="text"
@@ -27,28 +27,28 @@ const Formulario = () => {
               required
             />
           </div>
-          <div class="input-grupo">
-            <div className="expirate-date">
-              <label for="expire-date">EXP. DATE (MM/YY)</label>
-              <div className="input-exp-date">
+          <div className="input-grupo">
+            <div className="expirate-date" id="expire-date">
+              <label htmlFor="expire-date">EXP. DATE (MM/YY)</label>
+              <div className="input-exp-date" id="expire-date">
                 <input
                   placeholder="MM"
                   type="text"
-                  id="expire-date"
-                  name="expire-date"
+                  id="expire-date-month"
+                  name="expire-date-month"
                   required
                 />
                 <input
                   placeholder="YY"
                   type="text"
-                  id="expire-date"
-                  name="expire-date"
+                  id="expire-date-year"
+                  name="expire-date-year"
                   required
                 />
               </div>
             </div>
             <div className="input-grupo-ccv">
-              <label for="ccv">CCV</label>
+              <label htmlFor="ccv">CCV</label>
               <input
                 placeholder="e.g. 123"
                 type="text"
@@ -63,7 +63,7 @@ const Formulario = () => {
           </button>
         </form>
       </div>
-    </>
+    
   );
 }
 

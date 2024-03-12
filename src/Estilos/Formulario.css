@@ -7,11 +7,10 @@ body {
 
 .formulario {
   max-width: 600px;
- 
   padding: 20px;
+  position: absolute;
+  top: 40%;
 }
-
-
 
 .input-group {
   margin-bottom: 20px;
