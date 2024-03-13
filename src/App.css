@@ -130,3 +130,109 @@ p {
   justify-self: start;
   margin-left: 12px;
 }
+
+@media (min-width: 375px) {
+  
+  .bgmobile {
+    width: 300px;
+    height: 100vh;
+  }
+
+  .container {
+    position: relative;
+    width: 350px;
+    height: 150px;
+    top: -480px;
+    left: 20px;
+  }
+
+  .bg-card {
+    width: 245px;
+    height: 125px;
+    border-radius: 5px;
+  }
+
+  .bg-card.back {
+    position: absolute;
+    top: 190%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 0 12px -4px rgba(124, 124, 124, 0.5),
+      8px 8px 12px -4px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    height: 160px;
+  }
+  .frontal {
+    top: 40%;
+    left: 50%;
+  }
+
+  .card.front {
+    width: 320px;
+    height: 160px;
+    border-radius: 5px;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+
+  p {
+    position: absolute;
+    top: 190%;
+    left: 110%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: rgb(247, 247, 247);
+  }
+
+  .circulo {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    top: 80%;
+    left: 20%;
+  }
+
+  .circulo.dos {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    top: 93%;
+    left: 70%;
+  }
+
+  .credit_card_number {
+    position: absolute;
+   top: 160%;
+    left: 92%;
+  }
+
+  .nombre {
+    position: absolute;
+    font-size: 15px;
+    color: lightgray;
+    top: 150%;
+    left: 15%;
+  }
+
+  .fecha_expiracion {
+    position: absolute;
+    font-size: 15px;
+    color: lightgray;
+    top: 150%;
+    left: 120%;
+  }
+  .formulario {
+    max-width: 600px;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+  }
+}
