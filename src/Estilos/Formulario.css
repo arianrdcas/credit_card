@@ -9,11 +9,11 @@ body {
   max-width: 600px;
   padding: 20px;
   position: absolute;
-  top: 40%;
+  top: 35%;
 }
 
 .input-group {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .input-grupo {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
 }

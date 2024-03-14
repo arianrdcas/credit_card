@@ -11,7 +11,7 @@ function App() {
       <img className="bgmobile" src={bgmobile} alt="Background" />
       <div className="container">
           <img className="bg-card back" src={bgcardback} alt="Card Back" />
-          <p>000</p>
+          <p className="ccv">000</p>
           <img className="card front" src={bgcardfront} alt="Card Front" />
           <div className="circulo"></div>
           <div className="circulo dos"></div>
