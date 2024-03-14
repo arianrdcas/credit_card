@@ -46,6 +46,7 @@ body {
   border-radius: 5px;
   width: 70px;
 }
+
 .input-grupo .expirate-date {
   flex: 1;
   display: flex;
@@ -67,9 +68,11 @@ button[type="submit"] {
   border-radius: 5px;
   font-size: x-large;
 }
+
 .input-exp-date {
   display: flex;
   flex-direction: row;
   margin-right: 105px;
   gap: 15px;
 }
+
