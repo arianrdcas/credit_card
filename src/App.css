@@ -132,16 +132,13 @@ p {
 }
 
 @media (min-width: 375px) {
-  
   .bgmobile {
     width: 300px;
     height: 100vh;
   }
 
   .container {
-    position: relative;
-    width: 350px;
-    height: 150px;
+    position: absolute;
     top: -480px;
     left: 20px;
   }
@@ -153,86 +150,82 @@ p {
   }
 
   .bg-card.back {
-    position: absolute;
-    top: 190%;
+    position: relative;
+    top: 630%;
     left: 80%;
     transform: translate(-50%, -50%);
     box-shadow: 8px 0 12px -4px rgba(124, 124, 124, 0.5),
       8px 8px 12px -4px rgba(0, 0, 0, 0.5);
-    width: 320px;
-    height: 160px;
-  }
-  .frontal {
-    top: 40%;
-    left: 50%;
+    width: 350px;
+    height: 170px;
   }
 
   .card.front {
-    width: 320px;
-    height: 160px;
+    width: 350px;
+    height: 170px;
     border-radius: 5px;
-    position: absolute;
-    top: 80%;
+    position: relative;
+    top: 370%;
     left: 70%;
     transform: translate(-50%, -50%);
   }
 
   p {
-    position: absolute;
-    top: 190%;
-    left: 110%;
+    position: relative;
+    top: 515%;
+    left: 160%;
     transform: translate(-50%, -50%);
     font-size: 12px;
     color: rgb(247, 247, 247);
   }
 
   .circulo {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: white;
-    top: 80%;
-    left: 20%;
+    top: 205%;
+    left: 21%;
   }
 
   .circulo.dos {
-    position: absolute;
-    width: 10px;
-    height: 10px;
+    position: relative;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid white;
-    top: 93%;
-    left: 70%;
+    top: 194%;
+    left: 30%;
   }
 
   .credit_card_number {
-    position: absolute;
-   top: 160%;
-    left: 92%;
+    position: relative;
+    top: 240%;
+    left: 73%;
   }
 
   .nombre {
-    position: absolute;
+    position: relative;
     font-size: 15px;
     color: lightgray;
-    top: 150%;
-    left: 15%;
+    top: 250%;
+    left: 20%;
   }
 
   .fecha_expiracion {
-    position: absolute;
+    position: relative;
     font-size: 15px;
     color: lightgray;
-    top: 150%;
-    left: 120%;
+    top: 250%;
+    left: 70%;
   }
   .formulario {
     max-width: 600px;
     padding: 20px;
     position: absolute;
     top: 25%;
-    left: 50%;
+    left: 40%;
   }
 }
