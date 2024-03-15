@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 import "../Estilos/Formulario.css";
 
-const Formulario = ({ onNameChange }) => {
+const Formulario = ({
+  onNameChange,
+  onCardNumberChange,
+  onMonthChange,
+  onYearChange,
+  onCcvChange
+}) => {
   const [name, setName] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
+  const [month, setMonth] = useState("");
+  const [year, setYear] = useState("");
+  const [ccv, setCcv] = useState("");
   const [isTyping, setIsTyping] = useState(false);
 
   const handleInputChange = (event) => {
@@ -11,6 +21,31 @@ const Formulario = ({ onNameChange }) => {
     setIsTyping(true);
     onNameChange(value);
   };
+  const handleInputCardChange = (event) => {
+    const { value } = event.target;
+    setCardNumber(value);
+    setIsTyping(true);
+    onCardNumberChange(value);
+  };
+  const handleInputMonthChange = (event) => {
+    const { value } = event.target;
+    setMonth(value);
+    setIsTyping(true);
+    onMonthChange(value);
+  };
+  const handleInputYearChange = (event) => {
+    const { value } = event.target;
+    setYear(value);
+    setIsTyping(true);
+    onYearChange(value);
+  };
+  const handleInputCcvChange = (event) => {
+    const { value } = event.target;
+    setCcv(value);
+    setIsTyping(true);
+    onCcvChange(value);
+  };
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -38,6 +73,8 @@ const Formulario = ({ onNameChange }) => {
             type="text"
             id="card-number"
             name="card-number"
+            value={cardNumber}
+            onChange={handleInputCardChange}
             required
           />
         </div>
@@ -50,6 +87,8 @@ const Formulario = ({ onNameChange }) => {
                 type="text"
                 id="expire-date-month"
                 name="expire-date-month"
+                value={month}
+                onChange={handleInputMonthChange}
                 required
               />
 
@@ -58,6 +97,8 @@ const Formulario = ({ onNameChange }) => {
                 type="text"
                 id="expire-date-year"
                 name="expire-date-year"
+                value={year}
+                onChange={handleInputYearChange}
                 required
               />
             </div>
@@ -69,6 +110,8 @@ const Formulario = ({ onNameChange }) => {
               type="text"
               id="ccv"
               name="ccv"
+              value={ccv}
+              onChange={handleInputCcvChange}
               required
             />
           </div>
