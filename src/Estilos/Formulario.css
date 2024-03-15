@@ -71,8 +71,21 @@ button[type="submit"] {
 
 .input-exp-date {
   display: flex;
-  flex-direction: row;
-  margin-right: 105px;
-  gap: 15px;
+  align-items: center;
 }
 
+
+.input-exp-date input {
+  margin-right: 10px;
+}
+
+.input-exp-date input[type="text"]:last-child {
+  margin-right: 0; /* Eliminar el margen derecho del último input */
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 10px; /* Alinear el mensaje de error con el input MM */
+}

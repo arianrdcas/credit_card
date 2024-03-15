@@ -6,11 +6,12 @@ const Formulario = ({
   onCardNumberChange,
   onMonthChange,
   onYearChange,
-  onCcvChange
+  onCcvChange,
 }) => {
   const [name, setName] = useState("");
   const [cardNumber, setCardNumber] = useState("");
   const [month, setMonth] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
   const [year, setYear] = useState("");
   const [ccv, setCcv] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -23,29 +24,50 @@ const Formulario = ({
   };
   const handleInputCardChange = (event) => {
     const { value } = event.target;
-    setCardNumber(value);
+    const isValid = /^\d{0,16}$/.test(value);
+    if(isValid){setCardNumber(value);
     setIsTyping(true);
     onCardNumberChange(value);
+  }else{
+    console.log("El valor ingresado no es un número válido entre 1 y 12");
+  }
+    
   };
   const handleInputMonthChange = (event) => {
     const { value } = event.target;
-    setMonth(value);
-    setIsTyping(true);
-    onMonthChange(value);
+    const isValid = /^(1[0-2]?|[1-9]?)$/.test(value);
+
+    if (isValid) {
+      setMonth(value);
+      setIsTyping(true);
+      onMonthChange(value);
+    } else {
+      // Si el valor no es válido, puedes manejarlo aquí, como mostrar un mensaje de error
+      setErrorMessage("Solo números válidos entre 1 y 12");
+    }
   };
   const handleInputYearChange = (event) => {
     const { value } = event.target;
-    setYear(value);
-    setIsTyping(true);
-    onYearChange(value);
+    const isValid = /^\d{0,2}$/.test(value);
+
+    if (isValid) {
+      setYear(value);
+      setIsTyping(true);
+      onYearChange(value);
+    } else {
+      // Si el valor no es válido, puedes manejarlo aquí, como mostrar un mensaje de error
+      console.log("El valor ingresado no es un número de dos dígitos");
+    }
   };
   const handleInputCcvChange = (event) => {
     const { value } = event.target;
-    setCcv(value);
-    setIsTyping(true);
-    onCcvChange(value);
+    const isValid = /^\d{1,3}$/.test(value);
+    if (isValid) {
+      setCcv(value);
+      setIsTyping(true);
+      onCcvChange(value);
+    }
   };
-  
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -91,7 +113,9 @@ const Formulario = ({
                 onChange={handleInputMonthChange}
                 required
               />
-
+              {errorMessage && (
+                <span className="error-message">{errorMessage}</span>
+              )}
               <input
                 placeholder="YY"
                 type="text"

@@ -46,7 +46,7 @@ function App() {
         <p className="credit_card_number">{cardNumber || "1234567891234567"}</p>
         <span className="nombre">{name || "Pepe Perez"}</span>
         <span className="fecha_expiracion">{month || "05"}</span>
-        <span className="fecha_expiracion">{ year || "/30"}</span>
+        <span className="fecha_expiracion">{year ? `/${year}` : "/30"}</span>
       </div>
       <Formulario
         onNameChange={handleNameChange}
